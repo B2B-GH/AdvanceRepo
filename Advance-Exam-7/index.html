@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<script>
+// Entry guard: this exam can only be opened from the portal page.
+(function(){
+  try{
+    if(sessionStorage.getItem('advPortalEntry') !== '1'){ location.replace('../index.html'); }
+  }catch(e){ /* storage blocked: let the student in rather than lock them out */ }
+})();
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dream Series Quiz #4</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -354,6 +363,7 @@
         <button class="print-btn" id="printBtn">Print / Save as PDF</button>
       </div>
       <div class="sent-note">Your result has also been sent to your teacher.</div>
+      <p style="text-align:center;margin-top:14px;"><a href="../index.html" style="color:var(--leather);">&larr; Back to Exam Portal</a></p>
     </div>
 
     <div class="quiz-section" data-section="1">
@@ -400,7 +410,7 @@ const questions = [
  {pts:4, type:'radio', prompt:'What is the core meaning of this family?', ar:'أَمَاتَ - يُمِيتُ', opts:[
    {t:'to give death', c:1}, {t:'to die'}, {t:'to call for death'}, {t:'to ask for death'}]},
  {pts:2, type:'radio', prompt:'The following word is related to what color?', ar:'مُسْوَدَّة', opts:[
-   {t:'Green'}, {t:'Blue', c:1}, {t:'Black'}, {t:'None of the above'}]},
+   {t:'Green'}, {t:'Blue'}, {t:'Black', c:1}, {t:'None of the above'}]},
  {pts:3, type:'radio', prompt:'What grammatical label / role this word would play?', ar:'مَسْحُورُونَ', opts:[
    {t:'Zarf'}, {t:'Masdar'}, {t:'Ism Faail'}, {t:"Ism Maf'ool", c:1}]},
  {pts:3, type:'radio', prompt:'Translate '+A('مَنْ يَدْرُسُ'), opts:[
