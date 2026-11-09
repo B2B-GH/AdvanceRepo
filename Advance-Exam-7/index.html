@@ -250,6 +250,51 @@
   .begin-btn{ margin-top: 6px; padding: 11px 26px; font-family:'Spectral',serif; font-size:1rem; border-radius:4px; cursor:pointer; background: var(--leather); color: var(--paper-raised); border:none; }
   .begin-btn:disabled{ opacity:.45; cursor:not-allowed; }
   .pledge-err{ color: var(--bad); font-size:.9rem; margin-top:8px; min-height:1.2em; }
+
+  /* ===== Advance Series theme: deep emerald + gold (dark) ===== */
+  :root{
+    --paper: #0c2625;
+    --paper-raised: #123837;
+    --ink: #eef3ec;
+    --ink-soft: #b9cfc9;
+    --rule: #2f5d59;
+    --leather: #d4af37;
+    --leather-deep: #e8cb68;
+    --good: #8fe0b0;
+    --good-bg: #17493a;
+    --bad: #ff9a8a;
+    --bad-bg: #4a2323;
+  }
+  body{
+    background-color: #0c2625;
+    background-image: radial-gradient(rgba(212,175,55,0.10) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  header.masthead h1{ color: #ffffff; }
+  .q-card, .score-card, .gate-card, .pledge-card, .timer-bar{ box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
+  .choice{ background: #0f302f; }
+  .choice:hover{ border-color: #d4af37; }
+  .choice.picked{ background: #1d4a45; border-color: #d4af37; }
+  .nav-btn.next, .begin-btn, .grade-badge{ color: #10302e; }
+  .nav-btn.next:hover, .begin-btn:hover:not(:disabled){ background: #e8cb68; }
+  .nav-btn.back:hover, .print-btn:hover{ background: rgba(212,175,55,0.12); }
+  .nav-bar{ background: #0c2625; }
+  .review-overlay{ background: rgba(4,16,15,0.75); }
+  .review-cell{ color: #ffffff; }
+  .review-cell.answered{ background: #2f8f6a; }
+  .review-cell.unanswered{ background: #b4443a; }
+  .legend-dot.answered{ background: #2f8f6a; }
+  .legend-dot.unanswered{ background: #b4443a; }
+  .name-row input{ color: #ffffff; }
+  .q.correct .q-card{ border-color: #2f8f6a; }
+  .q.incorrect .q-card{ border-color: #b4443a; }
+  @media print{
+    :root{ --paper:#fff; --paper-raised:#fff; --ink:#1B2A3A; --ink-soft:#4A5568; --rule:#C9BC9C; --leather:#8C5A2B; --leather-deep:#6E4420; --good:#3E6B52; --good-bg:#E3EBE1; --bad:#9A3B32; --bad-bg:#F1E2DE; }
+    body{ background:#fff !important; }
+    header.masthead h1, .name-row input{ color:#1B2A3A; }
+    .grade-badge{ color:#fff; }
+    .q-card, .score-card{ box-shadow:none; }
+  }
 </style>
 </head>
 <body>

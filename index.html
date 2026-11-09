@@ -1,25 +1,52 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bayyina To Bayna Institute | Advance Series Exam Portal</title>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bayyina To Bayna Institute | Advance Exam Portal</title>
 <style>
- body{margin:0;background:#EFE8D6;color:#1B2A3A;font-family:Georgia,'Times New Roman',serif;display:flex;justify-content:center;padding:40px 16px;}
- .card{max-width:560px;width:100%;background:#F7F2E4;border:1.5px solid #8C5A2B;border-radius:8px;padding:34px 30px;text-align:center;}
- img.logo{max-width:140px;height:auto;margin-bottom:10px;}
- h1{margin:6px 0 4px;color:#6E4420;font-size:1.9rem;}
- .inst{color:#4A5568;font-style:italic;margin:0 0 6px;}
- p{color:#4A5568;}
- ul{list-style:none;padding:0;margin:24px 0 0;}
- li{margin:12px 0;}
- a.btn{display:block;padding:14px 18px;background:#8C5A2B;color:#F7F2E4;text-decoration:none;border-radius:5px;font-size:1.05rem;}
- a.btn:hover{background:#6E4420;}
-</style></head><body>
-<div class="card">
- <img class="logo" src="logo.png" alt="Bayyina To Bayna Institute Logo" onerror="this.style.display='none'">
- <h1>Advance Series Exam Portal</h1>
- <p class="inst">Bayyina To Bayna Institute</p>
- <p>Select an exam below to begin.</p>
- <ul>
-  <li><a class="btn" href="Advance-Exam-7/index.html">Start Advance 7 Quiz</a></li>
- </ul>
-</div>
-</body></html>
+  *{ box-sizing: border-box; }
+  body{
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 36px 16px;
+    font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0b2524;
+    background-image: radial-gradient(rgba(212,175,55,0.10) 1px, transparent 1px);
+    background-size: 24px 24px;
+    color: #e6f2ee;
+  }
+  .card{
+    width: 100%; max-width: 523px; text-align: center;
+    padding: 42px 40px 34px;
+    background: linear-gradient(180deg, #14403d 0%, #0e2f2d 100%);
+    border: 1.5px solid #d4af37; border-radius: 28px;
+    box-shadow: 0 18px 50px rgba(0,0,0,0.55), 0 0 0 1px rgba(212,175,55,0.08);
+  }
+  .logo{ width: 170px; height: auto; display: block; margin: 0 auto 22px; filter: drop-shadow(0 6px 14px rgba(0,0,0,0.5)); }
+  h1{ margin: 0 0 8px; font-size: 1.9rem; font-weight: 700; color: #ffffff; letter-spacing: 0.2px; }
+  .inst{ margin: 0 0 18px; font-size: 1.08rem; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #d4af37; }
+  .lead{ margin: 0 0 30px; font-size: 0.95rem; color: #cfe3dd; }
+  ul{ list-style: none; margin: 0; padding: 0; }
+  li{ margin: 0 0 20px; }
+  a.btn{
+    display: block; padding: 18px 16px; border: 1px solid #d4af37; border-radius: 18px;
+    color: #d4af37; text-decoration: none; font-weight: 600; font-size: 1.05rem;
+    background: rgba(0,0,0,0.12); transition: background .2s, color .2s, transform .2s, box-shadow .2s;
+  }
+  a.btn:hover, a.btn:focus{ background: #d4af37; color: #0e2f2d; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(212,175,55,0.25); outline: none; }
+  .mark{ margin-top: 26px; font-size: 1.4rem; color: #7a6a4a; }
+</style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="logo.png" alt="Bayyina To Bayna Institute Logo">
+    <h1>Advance Exam Portal</h1>
+    <div class="inst">Bayyina To Bayna Institute</div>
+    <p class="lead">Select an exam below to begin testing your language skills.</p>
+    <ul>
+      <li><a class="btn" href="Advance-Exam-7/index.html">Start Advance Exam 7</a></li>
+    </ul>
+    <div class="mark">&#10058;</div>
+  </main>
+</body>
+</html>
