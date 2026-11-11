@@ -399,45 +399,45 @@
 <script>
 const A = s => '<span class="arw">' + s + '</span>';
 const questions = [
- {pts:1, type:'radio', prompt:"1. What is the 3rd person female version of KAANA?", opts:[
+ {pts:1, type:'radio', prompt:"What is the 3rd person female version of KAANA?", opts:[
    {t:"KANNA"}, {t:"KA'ANNA"}, {t:"KUNNA", c:1}, {t:"KINNA"}]},
- {pts:3, type:'checkbox', prompt:"2. Select all the Jumlah Ismiyyah sentences", opts:[
+ {pts:3, type:'checkbox', prompt:"Select all the Jumlah Ismiyyah sentences", opts:[
    {t:A("حَامِدٌ ذَهَبَ إِلَى البَقَالَةِ"), c:1}, {t:A("خَالِدٌ ضَرَبَ حَامِدٌ")}, {t:A("كَتَبَ خَالِدٌ")}, {t:A("كَانَ حَامِدٌ فَرِحٌ"), c:1}]},
- {pts:2, type:'radio', prompt:"3. The States of ism & khabar of KAANA are:", opts:[
+ {pts:2, type:'radio', prompt:"The States of ism & khabar of KAANA are:", opts:[
    {t:"Ism is raf, khabar is jarr"}, {t:"khabar is nasb, ism is jarr"}, {t:"Ism is nasb, khabar is raf’"}, {t:"Khabar is nasb, ism is raf’", c:1}]},
- {pts:2, type:'radio', prompt:"4. Write the following without Kaana:", ar:"كُنْتُ سَعِيدًا", opts:[
+ {pts:2, type:'radio', prompt:"Write the following without Kaana:", ar:"كُنْتُ سَعِيدًا", opts:[
    {t:A("أنا سَعِيدٌ"), c:1}, {t:A("أنتَ سَعِيدٌ")}, {t:A("أنا سَعِيدَ")}, {t:A("أَنَا سَعِيْدٌ")}]},
- {pts:3, type:'radio', prompt:"5. Write the following with Kaana", ar:"مَنْ هُوَ عَدُوٌّ", opts:[
+ {pts:3, type:'radio', prompt:"Write the following with Kaana", ar:"مَنْ هُوَ عَدُوٌّ", opts:[
    {t:A("كَانَ مَنْ هُوَ عَدُوٌّ")}, {t:A("كَانَ مَنْ عَدُوًّا")}, {t:A("كَانَ مَنْ هُوَ عَدُوًّا")}, {t:A("مَنْ كَانَ عَدُوًّا"), c:1}]},
- {pts:2, type:'radio', prompt:"6. Write the following without Kaana:", ar:"كَانَ عَدُوًّا لِجِبْرِيلَ", opts:[
+ {pts:2, type:'radio', prompt:"Write the following without Kaana:", ar:"كَانَ عَدُوًّا لِجِبْرِيلَ", opts:[
    {t:A("هِيَ عَدُوًّا لِجِبْرِيلَ")}, {t:A("هُوَ عَدُوٌّ لِجِبْرِيلَ")}, {t:A("هُوَ عَدُوًّا لِجِبْرِيلَ")}, {t:"None of the above", c:1}]},
- {pts:4, type:'radio', prompt:"7. What is the "+A("أنا")+" form of "+A("ظَلَّ")+" ?", opts:[
+ {pts:4, type:'radio', prompt:"What is the "+A("أنا")+" form of "+A("ظَلَّ")+" ?", opts:[
    {t:"The word "+A("ظَلَلْتَ")}, {t:"The word "+A("ظَلَّتُ")}, {t:"The word "+A("ظَلَلْنِي")}, {t:"None of the above", c:1}]},
- {pts:2, type:'checkbox', prompt:"8. Select whatever is the correct labelling from the following for:", ar:"لَعَلَّ الْبَيْتَ يَكُونُ قَرِيبًا", opts:[
+ {pts:2, type:'checkbox', prompt:"Select whatever is the correct labelling from the following for:", ar:"لَعَلَّ الْبَيْتَ يَكُونُ قَرِيبًا", opts:[
    {t:"La’alla - Mub & Al-bayta - Khab"}, {t:"La’alla Al-bayta - Mub & Qareeban - Khab"}, {t:"yakoonu qareeban - Khab Qareeban - Khabar kaana", c:1}, {t:"None of the above"}]},
- {pts:2, type:'radio', prompt:"9. What is the difference between NASB & Fee Mahalli Nasb?", opts:[
+ {pts:2, type:'radio', prompt:"What is the difference between NASB & Fee Mahalli Nasb?", opts:[
    {t:"Nasb is used for feil while fee mahalli for isms"}, {t:"Fee mahalli is used for fragments while Nasb for individual words", c:1}, {t:"Nasb used for details while fee mahalli used for sentences"}, {t:"None of the above"}]},
- {pts:4, type:'radio', prompt:"10. Translate the following:", ar:"ظَلَّ يَضْرِبُ<br>أَصْبَحَ يَكْتُبُ", opts:[
+ {pts:4, type:'radio', prompt:"Translate the following:", ar:"ظَلَّ يَضْرِبُ<br>أَصْبَحَ يَكْتُبُ", opts:[
    {t:"1st sentence translates as “He became……..” while the 2nd as “He remained ……”"}, {t:"1st sentence translates as “He remained……..” while the 2nd as “He became…….”"}, {t:"Both the sentences are grammatically incorrect"}, {t:"None of the above", c:1}]},
- {pts:3, type:'radio', prompt:"11. Complete the "+A("إِعْرَابُ")+" of the following:", ar:"أَصْبَحَ يَسْجُدُ", opts:[
+ {pts:3, type:'radio', prompt:"Complete the "+A("إِعْرَابُ")+" of the following:", ar:"أَصْبَحَ يَسْجُدُ", opts:[
    {t:"Asbaha Yasjudu - Mubatada (since kaana sister + its ism = mub)"}, {t:"Asbaha - mub & Yasjudu - khab Mansub"}, {t:"Asbaha - mub & Yasjudu - khab fee mahalli nasb", c:1}, {t:"Yasjudu - Mub since rafa & Asbaha - Khab since Nasb"}]},
- {pts:2, type:'radio', prompt:"12. Select whatever is the correct labelling from the following for:", ar:"الْحَمْدُ لِلَّهِ الَّذِي أَنزَلَ", opts:[
+ {pts:2, type:'radio', prompt:"Select whatever is the correct labelling from the following for:", ar:"الْحَمْدُ لِلَّهِ الَّذِي أَنزَلَ", opts:[
    {t:"SILAH - Allazi Anzala & Allazi Anzala - Sifah of Lillahi"}, {t:"SILAH - Anzala & Allazi Anzala - Sifah of Lillahi", c:1}, {t:"SILAH - Allazi & Allazi Anzala - Maf’ool of Al-Hamdu"}, {t:"SILAH - Allazi & Allazi Anzala - Mufhaf Ilayhi of Li-Allahi"}]},
- {pts:2, type:'checkbox', prompt:"13. Select all the right conditions for "+A("لَا نَافِيَةٌ لِلْجِنْسِ"), opts:[
+ {pts:2, type:'checkbox', prompt:"Select all the right conditions for "+A("لَا نَافِيَةٌ لِلْجِنْسِ"), opts:[
    {t:"Light", c:1}, {t:"Jarr"}, {t:"Nasb", c:1}, {t:"Proper"}]},
- {pts:2, type:'checkbox', prompt:"14. Select whatever is the correct labelling from the following for:", ar:"مَا مِن شَفِيعٍ إِلَّا بِإِذْنِهِ", opts:[
+ {pts:2, type:'checkbox', prompt:"Select whatever is the correct labelling from the following for:", ar:"مَا مِن شَفِيعٍ إِلَّا بِإِذْنِهِ", opts:[
    {t:"Ma - Mubtada, Min Shafiin - Khabar, Illa B-iznihi - MBK"}, {t:"Min Shafiin - Mub", c:1}, {t:"Illa Bi-iznihi - MBK", c:1}, {t:"Min Shafiin - MBK"}]},
- {pts:2, type:'radio', prompt:"15. Which of the Mafaail usually comes as Faail?", opts:[
+ {pts:2, type:'radio', prompt:"Which of the Mafaail usually comes as Faail?", opts:[
    {t:"Haal", c:1}, {t:"Mutlaq"}, {t:"Fee-hi"}, {t:"Lahu"}]},
- {pts:2, type:'radio', prompt:"16. Identify maf’ul type:", ar:"1. وَجَعَلْنَا بَيْنَهُمَا زَرْعًا<br>2. خَلَقْنَاكُمْ<br>3. وَأَرْسَلْنَاكَ لِلنَّاسِ رَسُولًا", opts:[
+ {pts:2, type:'radio', prompt:"Identify maf’ul type:", ar:"1. وَجَعَلْنَا بَيْنَهُمَا زَرْعًا<br>2. خَلَقْنَاكُمْ<br>3. وَأَرْسَلْنَاكَ لِلنَّاسِ رَسُولًا", opts:[
    {t:"1. Feehi 2. Bihi 3. Haal", c:1}, {t:"1. Haal 2. Bihi 3. Bihi"}, {t:"1. Bihi 2.Feehi 3. Bihi"}, {t:"None of the above"}]},
- {pts:4, type:'radio', prompt:"17. Which is the comparative word?", opts:[
+ {pts:4, type:'radio', prompt:"Which is the comparative word?", opts:[
    {t:"Tamyeez"}, {t:"The word "+A("شَرٌّ"), c:1}, {t:"The word "+A("الأَكْبَرُ")}, {t:"The word "+A("الحُسْنَى")}]},
- {pts:4, type:'radio', prompt:"18. Translate –  Best part of the house", opts:[
+ {pts:4, type:'radio', prompt:"Translate –  Best part of the house", opts:[
    {t:"The translation for this is "+A("أَجْمَلُ البَيْتِ"), c:1}, {t:"The translation for this is "+A("أَجْمَلُ بَيْتٍ")}, {t:"The translation for this is "+A("الأَجْمَلُ البَيْتِ")}, {t:"The translation for this is "+A("الأَجْمَلُ بَيْتٍ")}]},
- {pts:2, type:'radio', prompt:"19. Translate "+A("أَنْفَعُ كِتَابٍ هَذَا"), opts:[
+ {pts:2, type:'radio', prompt:"Translate "+A("أَنْفَعُ كِتَابٍ هَذَا"), opts:[
    {t:"This best of book"}, {t:"Best book of this"}, {t:"This best book", c:1}, {t:"This is best of all books"}]},
- {pts:2, type:'radio', prompt:"20. Cite the month of Eid-ul-Fitra", opts:[
+ {pts:2, type:'radio', prompt:"Cite the month of Eid-ul-Fitra", opts:[
    {t:"Rajab"}, {t:"Ramdhan"}, {t:"Shabaan"}, {t:"None of the above", c:1}]}
 ];
 
