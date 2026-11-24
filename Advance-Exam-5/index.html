@@ -406,7 +406,7 @@ const questions = [
  {pts:2, type:'radio', prompt:"The States of ism & khabar of KAANA are:", opts:[
    {t:"Ism is raf, khabar is jarr"}, {t:"khabar is nasb, ism is jarr"}, {t:"Ism is nasb, khabar is raf’"}, {t:"Khabar is nasb, ism is raf’", c:1}]},
  {pts:2, type:'radio', prompt:"Write the following without Kaana:", ar:"كُنْتُ سَعِيدًا", opts:[
-   {t:A("أنا سَعِيدٌ"), c:1}, {t:A("أنتَ سَعِيدٌ")}, {t:A("أنا سَعِيدَ")}, {t:A("أَنَا سَعِيْدٌ")}]},
+   {t:A("هُوَ سَعِيدٌ")}, {t:A("أنتَ سَعِيدٌ")}, {t:A("أنا سَعِيدَ")}, {t:A("أَنَا سَعِيْدٌ"), c:1}]},
  {pts:3, type:'radio', prompt:"Write the following with Kaana", ar:"مَنْ هُوَ عَدُوٌّ", opts:[
    {t:A("كَانَ مَنْ هُوَ عَدُوٌّ")}, {t:A("كَانَ مَنْ عَدُوًّا")}, {t:A("كَانَ مَنْ هُوَ عَدُوًّا")}, {t:A("مَنْ كَانَ عَدُوًّا"), c:1}]},
  {pts:2, type:'radio', prompt:"Write the following without Kaana:", ar:"كَانَ عَدُوًّا لِجِبْرِيلَ", opts:[
@@ -450,8 +450,8 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mdeovjqv';
 // ACCESS WINDOW — edit these two lines to schedule the exam (IST).
 // Format: "YYYY-MM-DDTHH:MM:SS+05:30"  (24-hour clock)
 // ============================================================
-const QUIZ_OPEN_AT  = "2026-11-24T10:00:00+05:30";
-const QUIZ_CLOSE_AT = "2026-11-24T11:00:00+05:30";
+const QUIZ_OPEN_AT  = "2026-11-10T09:00:00+05:30";
+const QUIZ_CLOSE_AT = "2026-11-10T23:59:00+05:30";
 // ============================================================
 
 function sendResultToTeacher(payload){
